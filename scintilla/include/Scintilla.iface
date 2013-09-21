@@ -4431,6 +4431,12 @@ get int GetSubStylesStart=4021(int styleBase,)
 # The number of sub styles associated with a base style
 get int GetSubStylesLength=4022(int styleBase,)
 
+# For a sub style, return the base style, else return the argument.
+get int GetStyleFromSubStyle=4027(int subStyle,)
+
+# For a secondary style, return the primary style, else return the argument.
+get int GetPrimaryStyleFromStyle=4028(int style,)
+
 # Free allocated sub styles
 fun void FreeSubStyles=4023(,)
 
